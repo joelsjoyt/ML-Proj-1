@@ -7,4 +7,5 @@ catboost
 xgboost
 #xgboost==1.7.1
 dill
+Flask
 # -e .
