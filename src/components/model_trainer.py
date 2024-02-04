@@ -103,12 +103,13 @@ class ModelTrainer:
             
             if best_model_score < 0.6:
                 raise CustomException("No best model found")
-            logging.info("Best model found for both training and testing dataset")
+            logging.info(f"Best model found {best_model_name} with R2 score {best_model_score}")
             
             save_object(
                 file_path = self.model_trainer_config.trained_model_file_path,
                 obj = best_model
             )
+            logging.info("Best model saved")
             
             predicted_output = best_model.predict(X_test)
             r2_square = r2_score(y_test, predicted_output)
