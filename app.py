@@ -13,7 +13,7 @@ from src.logger import logging
 
 application = Flask(__name__)
 app = application
-# Route for homepage
+# Route for homepage 
 
 @app.route('/')
 def index():
