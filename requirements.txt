@@ -4,8 +4,8 @@ seaborn
 matplotlib
 scikit-learn
 catboost
-# xgboost
-xgboost==1.7.1
+xgboost
+# xgboost==1.7.1
 dill
 Flask
--e .
+# -e .
